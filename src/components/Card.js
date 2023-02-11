@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 // const Card = (props) => {};
 
 const Card = ({title, children}) => {
@@ -13,4 +14,14 @@ const Card = ({title, children}) => {
   );
 };
 
+Card.propTypes = {
+  title: PropTypes.string.isRequired,
+  children: PropTypes.element,
+}
+
+Card.defaultProps = {
+  // title: 'Title'
+  children: null,
+}
+ 
 export default Card;
