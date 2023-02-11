@@ -19,12 +19,9 @@ const ListPage = () => {
       <h1>Blogs</h1>
       {posts.map(post => {
         return (
-          <Card key={post.id} title={post.title} />
-          // <div class="card mb-3" key={post.id}>
-          //   <div class="card-body">
-          //     {post.title}
-          //   </div>
-          // </div>
+          <Card key={post.id} title={post.title}>
+            <button>button</button>
+          </Card>
         );
       })}
     </div>
